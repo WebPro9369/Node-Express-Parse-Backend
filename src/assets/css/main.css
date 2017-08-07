@@ -1,0 +1,32 @@
+/* Font stylesheet */
+@import url('//fonts.googleapis.com/css?family=Nothing+You+Could+Do');
+
+/* Theme stylesheet */
+@import url('style.css');
+@import url('theme.css');
+@import url('ui.css');
+
+/* Theme layout 1 stylesheet */
+@import url('layout.css');
+
+/* Ion range slider stylesheet */
+/*@import url('plugins/ion-slider/ion.rangeSlider.css');
+@import url('plugins/ion-slider/style.css');*/
+
+/* Magnific Popup stylesheet */
+@import url('../plugins/magnific-popup/magnific-popup.css');
+
+/* X-editable stylesheet */
+@import url('../plugins/bootstrap-editable/css/bootstrap-editable.css');
+
+/* iCheck */
+@import url('../plugins/icheck/skins/flat/flat.css');
+
+/* Mcustom Srollbar */
+@import url('../plugins/mcustom-scrollbar/mcustom_scrollbar.min.css');
+
+/* jstree */
+@import url('../plugins/jstree/themes/default/style.min.css');
+
+/* Fix stylesheet */
+@import url('custom.css');
