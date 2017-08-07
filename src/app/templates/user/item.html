@@ -1,0 +1,23 @@
+<td><%= username || '&mdash;' %></td>
+<td><%= fullName || '&mdash;' %></td>
+<td><%= zipcode || '&mdash;' %></td>
+<td><%= phoneNumber || '&mdash;' %></td>
+<td><%= balance ? numeral(balance).format(MONEY_FORMAT) : '&mdash;' %></td>
+<td><%= group.join(', ') || '&mdash;' %></td>
+<td>
+	<% if (confirmed === true) { %>
+		<span class="text-success">Yes</span>
+	<% } else { %>
+		<span class="text-danger">No</span>
+	<% } %>
+</td>
+<td class="table-action">
+	<% if (confirmed === true) { %>
+		<a href="#" class="edit btn btn-sm btn-danger" data-action="user-confirm" data-id="<%= id %>" data-value="false" title="Unconfirm user"><i class="icon-dislike"></i></a>
+	<% } else { %>
+		<a href="#" class="edit btn btn-sm btn-success" data-action="user-confirm" data-id="<%= id %>" data-value="true" title="Confirm user"><i class="icon-like"></i></a>
+	<% } %>
+	<a href="#" class="edit btn btn-sm btn-default" data-action="user-update" data-id="<%= id %>" title="Update"><i class="icon-note"></i></a>
+	<a href="#" class="edit btn btn-sm btn-default" data-action="user-export" data-id="<%= id %>" title="Export"><i class="icon-cloud-download"></i></a>
+	<a href="#" class="edit btn btn-sm btn-default" data-action="user-view" data-id="<%= id %>" title="View"><i class="icon-eye"></i></a>
+</td>

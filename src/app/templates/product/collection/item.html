@@ -1,0 +1,15 @@
+<% if (this.type === 'form') { %>
+	<td class="col-md-1"><i class="fa fa-bars sortable-handle"></i></td>
+	<td class="col-md-7"><input name="product-size-title" type="text" value="<%= name %>" class="form-control" /></td>
+	<td class="col-md-3"><input name="product-size-quantity" type="text" value="<%= quantity || '' %>" data-step="1" class="numeric-stepper form-control" placeholder="Not available" /></td>
+	<td class="col-md-1">
+		<% if (this.model.isNew()) { %>
+			<a href="#" class="delete btn btn-sm btn-danger" data-action="product-size-remove"><i class="icons-office-52"></i></a>
+		<% } else { %>
+			&nbsp;
+		<% } %>
+	</td>
+<% } else { %>
+	<td class="col-md-10"><%= name || '&mdash;' %></td>
+	<td class="col-md-2"><%= quantity || 'Not available' %></td>
+<% } %>

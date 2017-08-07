@@ -1,0 +1,11 @@
+<% if (this.type === 'form') { %>
+	<td class="col-md-1"><i class="fa fa-bars sortable-handle"></i></td>
+	<td class="col-md-4"><input name="customer-profile-value" type="text" value="<%- value %>" class="form-control" /></td>
+	<td class="col-md-6"><input name="customer-profile-description" type="text" value="<%- description %>" class="form-control" /></td>
+	<td class="col-md-1">
+		<a href="#" class="delete btn btn-sm btn-danger" data-action="customer-profile-value-remove"><i class="icons-office-52"></i></a>
+	</td>
+<% } else { %>
+	<td class="col-md-5"><%- value || '&mdash;' %></td>
+	<td class="col-md-7"><%- description || '&mdash;' %></td>
+<% } %>

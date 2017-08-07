@@ -1,0 +1,307 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-topfull">
+		<div class="modal-content">
+			<div class="modal-header bg-dark">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+				<h4 class="modal-title"><strong>Product Discount</strong></h4>
+			</div>
+			<div class="modal-body">
+				
+				<ul class="nav nav-tabs nav-primary">
+					<li><a href="#product-discount-form-general" data-toggle="tab"><i class="icon-info"></i> General</a></li>
+					<li><a href="#product-discount-form-user-group" data-toggle="tab"><i class="icon-users"></i> User Group</a></li>
+					<li><a href="#product-discount-form-product" data-toggle="tab"><i class="icon-list"></i> Product</a></li>
+				</ul>
+				
+				<div class="tab-content">
+					
+					<div class="tab-pane fade" id="product-discount-form-general">
+						
+						<div class="row column-seperation">
+							
+							<div class="col-md-6 line-separator">
+				
+								<h3>General</h3>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="title" class="control-label">Discount title <small>(This text will be shown only to admin)</small></label>
+											<input id="title" name="title" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="description" class="control-label">Discount description <small>(This text will be shown only to admin)</small></label>
+											<textarea id="description" name="description" class="form-control" rows="5"></textarea>
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="note" class="control-label">Discount note <small>(This text will be shown to the customer as a description)</small></label>
+											<textarea id="note" name="note" class="form-control" rows="5"></textarea>
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="oldType" class="control-label">Old type <small>(This is required for support old app version)</small></label>
+											<input id="oldType" name="oldType" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+											
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="published" name="published" type="checkbox">
+											<label for="published">Published</label>
+										</div>
+									</div>
+									
+								</div>
+								
+								<h3>Condition</h3>
+										
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="code" class="control-label">Promo code <small>(Discount will be applied if promo code specified)</small></label>
+											<input id="code" name="code" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="expiredAt" class="control-label">Discount expired at <small>(Discount available only till date)</small></label>
+											<input id="expiredAt" name="expiredAt" type="text" class="form-control datepicker" data-msg="Expiration date is not specified">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="priority" class="control-label">Priority <small>(Discounts only with highest priority will be applied)</small></label>
+											<input id="priority" name="priority" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="condition" class="control-label">Conditions <small>(Discount will be applied if all conditions are satisfied)</small></label>
+											<input id="condition" name="condition" type="text" class="form-control select2-control" data-placeholder="Choose Conditions">
+										</div>
+									</div>
+								
+								</div>
+							
+							</div>
+							
+							<div class="col-md-6">
+								
+								<h3>Product Discount Value</h3>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="productDiscount-valueNumber" class="control-label">Amount<small>, USD</small></label>
+											<input id="productDiscount-valueNumber" name="productDiscount" rel="valueNumber" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="productDiscount-valuePercent" class="control-label">Percent<small>, %</small></label>
+											<input id="productDiscount-valuePercent" name="productDiscount" rel="valuePercent" type="text" class="form-control">
+										</div>
+									</div>
+									
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="productDiscount-valuePercentMin" class="control-label">Min<small>, USD</small></label>
+											<input id="productDiscount-valuePercentMin" name="productDiscount" rel="valuePercentMin" type="text" class="form-control">
+										</div>
+									</div>
+									
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="productDiscount-valuePercentMax" class="control-label">Max<small>, USD</small></label>
+											<input id="productDiscount-valuePercentMax" name="productDiscount" rel="valuePercentMax" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<h3>Delivery Discount Value</h3>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="deliveryDiscount-valueNumber" class="control-label">Amount<small>, USD</small></label>
+											<input id="deliveryDiscount-valueNumber" name="deliveryDiscount" rel="valueNumber" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="deliveryDiscount-valuePercent" class="control-label">Percent<small>, %</small></label>
+											<input id="deliveryDiscount-valuePercent" name="deliveryDiscount" rel="valuePercent" type="text" class="form-control">
+										</div>
+									</div>
+									
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="deliveryDiscount-valuePercentMin" class="control-label">Min<small>, USD</small></label>
+											<input id="deliveryDiscount-valuePercentMin" name="deliveryDiscount" rel="valuePercentMin" type="text" class="form-control">
+										</div>
+									</div>
+									
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="deliveryDiscount-valuePercentMax" class="control-label">Max<small>, USD</small></label>
+											<input id="deliveryDiscount-valuePercentMax" name="deliveryDiscount" rel="valuePercentMax" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<h3>Insurance Discount Value</h3>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="insuranceDiscount-valueNumber" class="control-label">Amount<small>, USD</small></label>
+											<input id="insuranceDiscount-valueNumber" name="insuranceDiscount" rel="valueNumber" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="insuranceDiscount-valuePercent" class="control-label">Percent<small>, %</small></label>
+											<input id="insuranceDiscount-valuePercent" name="insuranceDiscount" rel="valuePercent" type="text" class="form-control">
+										</div>
+									</div>
+									
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="insuranceDiscount-valuePercentMin" class="control-label">Min<small>, USD</small></label>
+											<input id="insuranceDiscount-valuePercentMin" name="insuranceDiscount" rel="valuePercentMin" type="text" class="form-control">
+										</div>
+									</div>
+									
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="insuranceDiscount-valuePercentMax" class="control-label">Max<small>, USD</small></label>
+											<input id="insuranceDiscount-valuePercentMax" name="insuranceDiscount" rel="valuePercentMax" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<h3>Total Discount Value</h3>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="totalDiscount-valueNumber" class="control-label">Amount<small>, USD</small></label>
+											<input id="totalDiscount-valueNumber" name="totalDiscount" rel="valueNumber" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="totalDiscount-valuePercent" class="control-label">Percent<small>, %</small></label>
+											<input id="totalDiscount-valuePercent" name="totalDiscount" rel="valuePercent" type="text" class="form-control">
+										</div>
+									</div>
+									
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="totalDiscount-valuePercentMin" class="control-label">Min<small>, USD</small></label>
+											<input id="totalDiscount-valuePercentMin" name="totalDiscount" rel="valuePercentMin" type="text" class="form-control">
+										</div>
+									</div>
+									
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="totalDiscount-valuePercentMax" class="control-label">Max<small>, USD</small></label>
+											<input id="totalDiscount-valuePercentMax" name="totalDiscount" rel="valuePercentMax" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+							</div>
+								
+						</div>
+								
+					</div>
+					
+					
+					<div class="tab-pane fade" id="product-discount-form-user-group" name="userGroup">
+					</div>
+					
+					
+					<div class="tab-pane fade" id="product-discount-form-product" name="product">
+					</div>
+					
+				
+				</div>
+					
+			</div>
+			<div class="modal-footer bg-dark">
+				<button type="submit" class="btn btn-primary btn-embossed">Save changes</button>
+				<button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>

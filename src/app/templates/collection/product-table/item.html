@@ -1,0 +1,12 @@
+<tr data-id="<%= id %>">
+	<td class="col-md-6 ui-sortable-handle"><i class="icon-cursor-move"></i>&nbsp;<%= name || '&mdash;' %></td>
+	<td class="col-md-2"><%= price ? numeral(price).format(MONEY_FORMAT) : '&mdash;' %></td>
+	<td class="col-md-2"><%= quantity ? numeral(quantity).format(NUMBER_FORMAT) : '&mdash;' %></td>
+	<td class="col-md-2">
+		<% if (published) { %>
+			<span class="text-success">Yes</span>
+		<% } else { %>
+			<span class="text-danger">No</span>
+		<% } %>
+	</td>
+</tr>

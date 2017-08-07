@@ -1,0 +1,277 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-topfull">
+		<div class="modal-content">
+			<div class="modal-header bg-dark">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+				<h4 class="modal-title"><strong>Stylist</strong></h4>
+			</div>
+			<div class="modal-body">
+				
+				<ul class="nav nav-tabs nav-primary">
+					<li><a href="#stylist-form-general" data-toggle="tab"><i class="icon-info"></i> General</a></li>
+					<li><a href="#stylist-form-price" data-toggle="tab"><i class="icon-basket-loaded"></i> Price</a></li>
+					<li><a href="#stylist-form-social" data-toggle="tab"><i class="icon-social-facebook"></i> Social</a></li>
+					<li><a href="#stylist-form-availability" data-toggle="tab"><i class="icon-basket-loaded"></i> Availability</a></li>
+				</ul>
+				
+				<div class="tab-content">
+					
+					<div class="tab-pane fade" id="stylist-form-general">
+						
+						<div class="row column-seperation">
+							
+							<div class="col-md-6 line-separator">
+				
+								<h3>General</h3>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="fullName" class="control-label">Stylist full name</label>
+											<input id="fullName" name="fullName" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="details" class="control-label">Details</label>
+											<textarea id="details" name="details" class="form-control" rows="5"></textarea>
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="shareLink" class="control-label">Share link</label>
+											<input id="shareLink" name="shareLink" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="city" class="control-label">City</label>
+											<input id="city" name="city" type="text" class="form-control">
+										</div>
+									</div>
+									
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="zip" class="control-label">ZIP code</label>
+											<input id="zip" name="zip" type="text" class="form-control">
+										</div>
+									</div>
+									
+									<div class="col-md-3">
+										<div class="form-group">
+											<label for="radiusToServe" class="control-label">Radius to serve <small>(in miles)</small></label>
+											<input id="radiusToServe" name="radiusToServe" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+											
+									<div class="col-md-12">
+										
+										<div class="form-group">
+											<input id="ableToTravel" name="ableToTravel" type="checkbox">
+											<label for="ableToTravel">Willing to travel beyond the mile radius selected</label>
+										</div>
+										
+									</div>
+									
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="type" class="control-label">Type</label>
+											<input id="type" name="type" type="text" class="form-control select2-control" data-placeholder="Choose Type">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row" data-stylist-type="1">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="gender" class="control-label">Gender</label>
+											<input id="gender" name="gender" type="text" class="form-control select2-control" data-placeholder="Choose Gender">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row" data-stylist-type="1">
+							
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="previousJob" class="control-label">Previous Company 1</label>
+											<input id="previousJob" name="previousJob" type="text" class="form-control" rel="0">
+										</div>
+									</div>
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="previousJob" class="control-label">Previous Company 2</label>
+											<input id="previousJob" name="previousJob" type="text" class="form-control" rel="1">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row" data-stylist-type="1">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="showroom" class="control-label">Showroom</label>
+											<input id="showroom" name="showroom" type="text" class="form-control select2-control" data-placeholder="Choose Showroom">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row" data-stylist-type="2">
+											
+									<div class="col-md-12">
+										
+										<div class="form-group">
+											<input id="primary" name="primary" type="checkbox">
+											<label for="primary">Home stylist for version 1.0</label>
+										</div>
+										
+									</div>
+									
+								</div>
+								
+								<div class="row">
+											
+									<div class="col-md-12">
+										<p class="alert bg-info"><i class="icon-bulb"></i> Item will be hidden from the lists in webadmin UI, but will be directly accessible</p>
+										<div class="form-group">
+											<input id="hidden" name="hidden" type="checkbox">
+											<label for="hidden">Hidden from webadmin UI</label>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="row">
+											
+									<div class="col-md-12">
+										
+										<p class="alert bg-info" data-stylist-type="1"><i class="icon-bulb"></i> <span name="notificatedAt"></span></p>
+										
+										<div class="form-group">
+											<input id="published" name="published" type="checkbox">
+											<label for="published">Published</label>
+										</div>
+										
+									</div>
+									
+								</div>
+							
+							</div>
+							
+							<div class="col-md-6">
+								
+								<h3>Photo</h3>
+								
+								<div class="row">
+								
+									<div class="col-md-12">
+										<div class="form-group">
+											<div name="photo"></div>
+										</div>
+									</div>
+									
+								</div>
+								
+								<h3>Navbar Image</h3>
+								
+								<div class="row">
+								
+									<div class="col-md-12">
+										<div class="form-group">
+											<div name="image"></div>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+								
+						</div>
+								
+					</div>
+					
+					
+					<div class="tab-pane fade" id="stylist-form-price">
+						
+						<h3>Price</h3>
+						
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="price" class="control-label">Price</label>
+									<input id="price" name="price" type="text" class="form-control">
+								</div>
+							</div>
+						
+						</div>
+								
+					</div>
+					
+					
+					<div class="tab-pane fade" id="stylist-form-social">
+						
+						<h3>Social Links</h3>
+						
+						<% _.each(socialTypes, function (socialType) { %>
+							
+							<div class="row">
+								
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="socialLink-<%= socialType.id %>" class="control-label"><%= socialType.text %></label>
+										<input id="socialLink-<%= socialType.id %>" name="socialLink" rel="<%= socialType.id %>" type="text" class="form-control">
+									</div>
+								</div>
+							
+							</div>
+							
+						<% }); %>
+								
+					</div>
+					
+					
+					<div class="tab-pane fade" id="stylist-form-availability" name="availability">
+					</div>
+					
+				
+				</div>
+					
+			</div>
+			<div class="modal-footer bg-dark">
+				<button type="submit" class="btn btn-primary btn-embossed">Save changes</button>
+				<button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>

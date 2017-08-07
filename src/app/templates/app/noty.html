@@ -1,0 +1,6 @@
+<div class="alert<%= type ? ' alert-' + type : '' %> fade in">
+	<% if (title) { %>
+		<h4 class="alert-title"><%= title %></h4>
+	<% } %>
+	<p<%= prompt ? 'class="m-b-10"' : '' %>><%= text %></p>
+</div>

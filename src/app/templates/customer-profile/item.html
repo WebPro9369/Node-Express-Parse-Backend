@@ -1,0 +1,11 @@
+<td class="ui-sortable-handle"><i class="icon-cursor-move"></i><%= key || '&mdash;' %></td>
+<td><%= title || '&mdash;' %></td>
+<td>
+	<%= _.compact([note, _values0.join(', '), _values1.join(', ')]).join('<br/>') || '&mdash;' %>
+</td>
+<td class="table-action">
+	<% if (isCategory === true) { %>
+		<a href="<%= app.router._generate('customerProfileList', null, {parent: objectId}) %>" class="edit btn btn-sm btn-blue" title="Go into"><i class="icon-share-alt"></i></a>
+	<% } %>
+	<a href="#" class="edit btn btn-sm btn-default" data-action="customer-profile-update" data-id="<%= id %>" title="Update"><i class="icon-note"></i></a>
+</td>

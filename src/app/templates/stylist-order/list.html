@@ -1,0 +1,36 @@
+<div class="panel">
+	<div class="panel-content table-responsive">
+		<div class="m-b-20">
+			<!-- <button class="btn btn-sm btn-dark" data-action="stylist-order-export"><i class="fa fa-download"></i> Export orders</button> -->
+		</div>
+		<div class="form-inline">
+			<div class="row" role="navigation">
+				<div class="col-xs-9" role="filter">
+					<div class="form-group">
+						<input name="stylist" type="hidden" data-placeholder="Choose Stylist" style="min-width: 300px; width: 300px;">
+					</div>
+					<div class="form-group">
+						<input name="state" type="hidden" data-placeholder="Choose State" style="min-width: 150px; width: 150px;">
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="dataTables_filter" role="search"></div>
+				</div>
+			</div>
+			<table class="table table-hover dataTable">
+				<thead role="sorting">
+				</thead>
+				<tbody role="items">
+				</tbody>
+			</table>
+			<div class="row" role="pagination"></div>
+		</div>
+	</div>
+</div>
+
+<div role="view" rel="stylistOrder"></div>
+<div role="view" rel="stylist"></div>
+<div role="view" rel="user"></div>
+<div role="view" rel="shippingAddress"></div>
+<div role="view" rel="paymentCard"></div>
+	

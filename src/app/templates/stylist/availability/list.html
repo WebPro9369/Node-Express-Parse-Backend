@@ -1,0 +1,36 @@
+<div class="row">
+
+	<div class="col-md-12">
+		
+		<% if (this.type === 'form') { %>
+			<p class="alert bg-info">
+				<i class="icon-bulb"></i> Click or drag while holding the ctrl/meta key, allowing for multiple (non-contiguous) selections.<br/>
+			</p>
+		<% } %>
+		
+		<table class="table timetable">
+			<thead>
+				<tr>
+					<th class="col-md-2">Date</th>
+					<% _.each(range, function (title) { %>
+						<th class="col-md-1 text-center" style="width: <%= 75 / this.count %>%"><%= title.split(/\s+/).join('<br/>') %></th>
+					<% }, {count: _.size(range)}); %>
+					<% if (this.type === 'form') { %>
+						<th class="col-md-1">&nbsp;</th>
+					<% } %>
+				</tr>
+			</thead>
+			<tbody role="items"></tbody>
+		</table>
+		<% if (this.type === 'form') { %>
+			<div class="m-t-20">
+				<button type="button" class="btn btn-sm btn-dark" data-action="stylist-availability-create"><i class="fa fa-plus"></i> Add One Date</button>
+				<button type="button" class="btn btn-sm btn-dark" data-action="stylist-availability-create" data-count="7"><i class="fa fa-plus"></i> Add One Week</button>
+				<p class="pull-right m-l-20"><span class="label bg-light">&nbsp;</span> &mdash; originally specified time</p>
+				<p class="pull-right m-l-20"><span class="label bg-green">&nbsp;</span> &mdash; currently specified time</p>
+			</div>
+		<% } %>
+	
+	</div>
+		
+</div>

@@ -1,0 +1,8 @@
+<td class="col-md-1"><a href="<%= app.router._generate('productOrderList', null, {order: id}) %>" title="View order"><i class="icon-share-alt"></i> <%= orderNumber || '&mdash;' %></a></td>
+<td class="col-md-2"><%= dateFrom instanceof Date ? moment.utc(dateFrom).format(DATE_FORMAT) : '' %>&nbsp;&mdash;&nbsp;<%= dateTill instanceof Date ? moment.utc(dateTill).format(DATE_FORMAT) : '' %></td>
+<td class="col-md-2"><%= _state.join(', ') || '&mdash;' %></td>
+<% _.each(totalRange, function (date, index) { %>
+	<td class="timetable-item col-md-1_2<% if (_.contains(rentRange, date)) { %> ui-selected<% } else if (_.contains(fullRange, date)) { %> ui-initially-selected<% } %>">
+		&nbsp;
+	</td>
+<% }); %>

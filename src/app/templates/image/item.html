@@ -1,0 +1,15 @@
+<img src="<%= (image = _.chain([thumb, original, binary2x, binary3x]).compact().first().value()) ? image.url : '' %>"/>
+<% if (this.type === 'form') { %>
+	<figcaption>
+		<h2 class="title"><%= title %></h2>
+		<h2 class="href"><%= href %></h2>
+	</figcaption>
+	<figcaption class="position-top">
+		<div class="btn-group">
+			<button class="btn btn-icon btn-default" data-action="image-alignment" data-value="top" title="Align to top"><i class="glyphicon glyphicon-align-left"></i></button>
+			<button class="btn btn-icon btn-default" data-action="image-alignment" data-value="middle" title="Align to center"><i class="glyphicon glyphicon-align-center"></i></button>
+			<button class="btn btn-icon btn-default" data-action="image-alignment" data-value="bottom" title="Align to bottom"><i class="glyphicon glyphicon-align-right"></i></button>
+		</div>
+		<button class="btn btn-icon btn-danger pull-right" type="button" data-action="image-remove" title="Remove image"><i class="icons-office-52"></i></button>
+	</figcaption>
+<% } %>

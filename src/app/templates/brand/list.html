@@ -1,0 +1,36 @@
+<div class="panel">
+	<div class="panel-content table-responsive">
+		<div class="m-b-20">
+			<button class="btn btn-sm btn-dark" data-action="brand-create"><i class="fa fa-plus"></i> Add New Brand</button>
+			<button class="btn btn-sm btn-default" data-action="brand-order" style="display: none;">Update Brand Order</button>
+		</div>
+		<p class="alert bg-info"><i class="icon-bulb"></i> You can change the order of the elements until filter and search is not active.</p>
+		<div class="form-inline">
+			<div class="row" role="navigation">
+				<div class="col-xs-9" role="filter">
+					<div class="form-group">
+						<input name="published" type="hidden" data-placeholder="Choose Published" style="min-width: 150px; width: 150px;">
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="dataTables_filter" role="search"></div>
+				</div>
+			</div>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th class="col-md-3">Name</th>
+						<th class="col-md-7">Description</th>
+						<th class="col-md-1">Published</th>
+						<th class="col-md-1">&nbsp;</th>
+					</tr>
+				</thead>
+				<tbody role="items">
+				</tbody>
+			</table>
+			<div class="row" role="pagination"></div>
+		</div>
+	</div>
+</div>
+
+<form role="form" rel="brand"></form>

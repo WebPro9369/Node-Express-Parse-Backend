@@ -1,0 +1,47 @@
+<div class="panel">
+	<div class="panel-content table-responsive">
+		<div class="m-b-20">
+			<button class="btn btn-sm btn-dark" data-action="product-order-create"><i class="fa fa-plus"></i> Lock Product</button>
+			<button class="btn btn-sm btn-dark" data-action="product-order-export"><i class="fa fa-cloud-download"></i> Export Orders</button>
+			<div class="btn-group pull-right" role="theme">
+			</div>
+		</div>
+		<div class="form-inline">
+			<div class="row" role="navigation">
+				<div class="col-xs-9" role="filter">
+					<div class="form-group">
+						<input name="type" type="hidden" data-placeholder="Choose Type" style="min-width: 300px; width: 300px;">
+					</div>
+					<div class="form-group">
+						<input name="product" type="hidden" data-placeholder="Choose Product" style="min-width: 300px; width: 300px;">
+					</div>
+					<div class="form-group">
+						<input name="productSize" type="hidden" data-placeholder="Choose Size" style="min-width: 150px; width: 150px;">
+					</div>
+					<div class="form-group">
+						<input name="state" type="hidden" data-placeholder="Choose State" style="min-width: 150px; width: 150px;">
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="dataTables_filter" role="search"></div>
+				</div>
+			</div>
+			<table class="table table-hover dataTable">
+				<thead role="sorting">
+				</thead>
+				<tbody role="items">
+				</tbody>
+			</table>
+			<div class="row" role="pagination"></div>
+		</div>
+	</div>
+</div>
+
+<form role="form" rel="productOrder"></form>
+<form role="form" rel="productOrderExport"></form>
+<div role="view" rel="productOrder"></div>
+<div role="view" rel="product"></div>
+<div role="view" rel="user"></div>
+<div role="view" rel="shippingAddress"></div>
+<div role="view" rel="paymentCard"></div>
+	

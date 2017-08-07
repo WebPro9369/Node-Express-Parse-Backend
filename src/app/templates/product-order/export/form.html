@@ -1,0 +1,51 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-topfull">
+		<div class="modal-content">
+			<div class="modal-header bg-dark">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+				<h4 class="modal-title"><strong>Product Order Export</strong></h4>
+			</div>
+			<div class="modal-body">
+				
+				<ul class="nav nav-tabs nav-primary">
+					<li><a href="#product-order-export-form-general" data-toggle="tab"><i class="icon-info"></i> General</a></li>
+				</ul>
+				
+				<div class="tab-content">
+					
+					<div class="tab-pane fade" id="product-order-export-form-general">
+						
+						<h3>General</h3>
+						
+						<div class="row">
+							
+							<div class="col-md-12">
+								
+								<p class="alert bg-info"><i class="icon-bulb"></i> The easiest way to specify date range is: click to the first field in "date range" group, popup will be opened, inside popup select last date, then select first date</p>
+								
+								<div class="form-group">
+									<label for="dateFrom" class="control-label">Date range</label>
+									<div class="input-daterange input-group">
+										<input type="text" class="form-control datepicker" name="dateFrom" data-msg="Start date is not specified" />
+										<span class="input-group-addon">to</span>
+										<input type="text" class="form-control datepicker" name="dateTill" data-msg="End date is not specified" />
+									</div>
+								</div>
+								
+							</div>
+						
+						</div>
+						
+					</div>
+					
+				
+				</div>
+					
+			</div>
+			<div class="modal-footer bg-dark">
+				<button type="submit" class="btn btn-primary btn-embossed">Export</button>
+				<button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>

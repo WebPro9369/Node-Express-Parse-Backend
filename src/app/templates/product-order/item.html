@@ -1,0 +1,68 @@
+<% if (this.options.theme === 'table') { %>
+	<td><%= createdAt ? moment(createdAt).format(DATETIME_FORMAT) : '&mdash;' %></td>
+	<td><%= orderNumber || '&mdash;' %></td>
+	<td>
+		<% if (product) { %>
+			<a href="#" data-action="product-view" data-id="<%= id %>">
+				<i class="icon-eye"></i>
+				<%= product.name || '&mdash;' %>
+				<%= productSize ? '&nbsp;/&nbsp;' + productSize.name : '' %>
+			</a>
+		<% } else { %>
+			&mdash;
+		<% } %>
+	</td>
+	<td><%= dateFrom instanceof Date ? moment.utc(dateFrom).format(DATE_FORMAT) : '' %>&nbsp;&mdash;&nbsp;<%= dateTill instanceof Date ? moment.utc(dateTill).format(DATE_FORMAT) : '' %></td>
+	<td><%= totalPrice ? numeral(totalPrice).format(MONEY_FORMAT) : '&mdash;' %></td>
+	<td><%= _node || '&mdash;' %></td>
+	<td><%= _state.join(', ') || '&mdash;' %></td>
+	<td class="table-action">
+		<% if ((actions = this.model.actions()) && !_.isEmpty(actions)) { %>
+			<div class="dropdown edit">
+				<button data-toggle="dropdown" class="edit btn btn-sm btn-primary dropdown-toggle" type="button" aria-expanded="false"><i class="icon-wrench"></i></button>
+				<ul role="menu" class="dropdown-menu dropdown-menu-right">
+					<% _.each(actions, function (state) { %>
+						<li><a href="#" data-action="product-order-state" data-value="<%= state.id %>">Mark order as &laquo;<%= state.text %>&raquo;</a></li>
+					<% }); %>
+				</ul>
+			</div>
+		<% } %>
+		<% if (this.model.isState(PRODUCT_ORDER_STATE_CHARGED) && !this.model.isState(PRODUCT_ORDER_STATE_REFUNDED)) { %>
+			<a href="#" class="edit btn btn-sm btn-danger" data-action="product-order-refund" data-id="<%= id %>" title="Refund order"><i class="icon-action-undo"></i></a>
+		<% } %>
+		<% if (this.model.isState(PRODUCT_ORDER_STATE_LOCKED)) { %>
+			<a href="#" class="edit btn btn-sm btn-danger" data-action="product-order-remove" data-id="<%= id %>" title="Remove product lock"><i class="icons-office-52"></i></a>
+		<% } %>
+		<a href="#" class="edit btn btn-sm btn-default" data-action="product-order-view" data-id="<%= id %>" title="View order"><i class="icon-eye"></i></a>
+	</td>
+<% } else if (this.options.theme === 'gallery') { %>
+	<div class="thumbnail">
+		<img src="<%= (product && product.preview && product.preview.thumb ? product.preview.thumb.url : '') || './assets/images/no-image.png' %>">
+		<div class="caption">
+			<h3 title="<%= (product ? product.name : '') || '&mdash;' %>"><%= (product ? product.name : '') || '&mdash;' %></h3>
+			<p><%= (productSize ? productSize.name : '') || '&mdash;' %> / <strong><%= totalPrice ? numeral(totalPrice).format(MONEY_FORMAT) : '&mdash;' %></strong></p>
+			<p title="Order created at <%= createdAt ? moment(createdAt).format(DATETIME_FORMAT) : '&mdash;' %>"><%= orderNumber || '&mdash;' %> from <%= _node || '&mdash;' %></p>
+			<p><%= dateFrom instanceof Date ? moment.utc(dateFrom).format(DATE_FORMAT) : '' %>&nbsp;&mdash;&nbsp;<%= dateTill instanceof Date ? moment.utc(dateTill).format(DATE_FORMAT) : '' %></p>
+			<p title="<%= _state.join(', ') || '&mdash;' %>"><%= _state.join(', ') || '&mdash;' %></p>
+			<div>
+				<% if ((actions = this.model.actions()) && !_.isEmpty(actions)) { %>
+					<div class="dropdown edit">
+						<button data-toggle="dropdown" class="edit btn btn-sm btn-primary dropdown-toggle" type="button" aria-expanded="false"><i class="icon-wrench"></i></button>
+						<ul role="menu" class="dropdown-menu dropdown-menu-right">
+							<% _.each(actions, function (state) { %>
+								<li><a href="#" data-action="product-order-state" data-value="<%= state.id %>">Mark order as &laquo;<%= state.text %>&raquo;</a></li>
+							<% }); %>
+						</ul>
+					</div>
+				<% } %>
+				<% if (this.model.isState(PRODUCT_ORDER_STATE_CHARGED) && !this.model.isState(PRODUCT_ORDER_STATE_REFUNDED)) { %>
+					<a href="#" class="edit btn btn-sm btn-danger" data-action="product-order-refund" data-id="<%= id %>" title="Refund order"><i class="icon-action-undo"></i></a>
+				<% } %>
+				<% if (this.model.isState(PRODUCT_ORDER_STATE_LOCKED)) { %>
+					<a href="#" class="edit btn btn-sm btn-danger" data-action="product-order-remove" data-id="<%= id %>" title="Remove product lock"><i class="icons-office-52"></i></a>
+				<% } %>
+				<a href="#" class="edit btn btn-sm btn-default" data-action="product-order-view" data-id="<%= id %>" title="View order"><i class="icon-eye"></i></a>
+			</div>
+		</div>
+	</div>
+<% } %>

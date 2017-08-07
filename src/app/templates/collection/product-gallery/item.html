@@ -1,0 +1,17 @@
+<div class="col-md-3 table-item table-item-xs" data-id="<%= id %>">
+	<div class="thumbnail">
+		<img src="<%= (preview && preview.thumb ? preview.thumb.url : '') || './assets/images/no-image.png' %>">
+		<div class="caption">
+			<h3 title="<%= name || '&mdash;' %>"><%= name || '&mdash;' %></h3>
+			<p title="<%= price ? numeral(price).format(MONEY_FORMAT) : '&mdash;' %> / <%= quantity ? numeral(quantity).format(NUMBER_FORMAT) : '0' %> items / <% if (published) { %>published<% } else { %>not published<% } %>">
+				<%= price ? numeral(price).format(MONEY_FORMAT) : '&mdash;' %> /
+				<nobr><%= quantity ? numeral(quantity).format(NUMBER_FORMAT) : '0' %> items</nobr> /
+				<% if (published) { %>
+					<span class="text-success">published</span>
+				<% } else { %>
+					<span class="text-danger">not published</span>
+				<% } %>
+			</p>
+		</div>
+	</div>
+</div>

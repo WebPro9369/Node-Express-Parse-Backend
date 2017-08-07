@@ -1,0 +1,18 @@
+<% if (this.type === 'form') { %>
+	<td><input name="date" type="text" class="form-control datepicker" value="<%= moment.utc(date).format('MM/DD/YYYY') %>" placeholder="Enter Date" /></td>
+	<% _.each(this.options.range, function (title, key) { %>
+		<td class="timetable-item<%= _.contains(this.time, Number(key)) ? ' ui-selected ui-initially-selected' : '' %>" data-id="<%= key %>"></td>
+	<% }, {count: _.size(this.options.range), time: time}); %>
+	<td>
+		<% if (this.model.isNew()) { %>
+			<a href="#" class="delete btn btn-sm btn-danger" data-action="stylist-availability-remove" title="Remove item"><i class="icons-office-52"></i></a>
+		<% } else { %>
+			<a href="#" class="delete btn btn-sm btn-default" data-action="stylist-availability-clone" title="Clone item"><i class="icon-note"></i></a>
+		<% } %>
+	</td>
+<% } else { %>
+	<td><%= moment.utc(date).format(DATE_FORMAT) || '' %></td>
+	<% _.each(this.options.range, function (title, key) { %>
+		<td class="timetable-item<%= _.contains(this.time, Number(key)) ? ' ui-initially-selected' : '' %>"></td>
+	<% }, {count: _.size(this.options.range), time: time}); %>
+<% } %>

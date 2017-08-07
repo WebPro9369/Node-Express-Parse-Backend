@@ -1,0 +1,42 @@
+<% if (_.contains(app.user.roles, ROLE_ADMIN)) { %>
+	<div class="menu-title">
+		Collections
+	</div>
+	<ul class="nav nav-sidebar">
+		<li rel="brand"><a href="<%= app.router._generate('brandList') %>"><i class="icon-graduation"></i><span>Brand</span></a></li>
+		<li rel="collection"><a href="<%= app.router._generate('collectionList') %>"><i class="icon-layers"></i><span>Collection</span></a></li>
+		<li rel="product"><a href="<%= app.router._generate('productList') %>"><i class="icon-bag"></i><span>Product</span></a></li>
+		<li rel="product-discount"><a href="<%= app.router._generate('productDiscountList') %>"><i class="icon-tag"></i><span>Product Discount</span></a></li>
+		<li rel="product-order" class="nav-parent">
+			<a href="<%= app.router._generate('productOrderList') %>"><i class="icon-basket"></i><span>Order</span><span class="fa arrow"></span></a>
+			<ul class="children collapse">
+				<li rel="product-order/1"><a href="<%= app.router._generate('productOrderList', null, {type: 1}) %>"><span class="pull-right badge badge-primary">New</span> New orders today</a></li>
+				<li rel="product-order/2"><a href="<%= app.router._generate('productOrderList', null, {type: 2}) %>">Awaiting delivery</a></li>
+				<li rel="product-order/3"><a href="<%= app.router._generate('productOrderList', null, {type: 3}) %>">Delivery is overdue</a></li>
+				<li rel="product-order/4"><a href="<%= app.router._generate('productOrderList', null, {type: 4}) %>">Awaiting return</a></li>
+				<li rel="product-order/5"><a href="<%= app.router._generate('productOrderList', null, {type: 5}) %>">Return is overdue</a></li>
+			</ul>
+		</li>
+	</ul>
+	<div class="menu-title">
+		Styling
+	</div>
+	<ul class="nav nav-sidebar">
+		<li rel="stylist-tutorial"><a href="<%= app.router._generate('stylistTutorialList') %>"><i class="icon-doc"></i><span>Tutorial</span></a></li>
+		<li rel="showroom"><a href="<%= app.router._generate('showroomList') %>"><i class="icon-home"></i><span>Showroom</span></a></li>
+		<li rel="stylist"><a href="<%= app.router._generate('stylistList') %>"><i class="icon-user-female"></i><span>Stylist</span></a></li>
+		<li rel="stylist-order"><a href="<%= app.router._generate('stylistOrderList') %>"><i class="icon-basket"></i><span>Order</span></a></li>
+	</ul>
+	<div class="menu-title">
+		System
+	</div>
+	<ul class="nav nav-sidebar">
+		<li rel="system-event"><a href="<%= app.router._generate('systemEventList') %>"><i class="icon-list"></i><span>System Event</span></a></li>
+		<li rel="user-group"><a href="<%= app.router._generate('userGroupList') %>"><i class="icon-users"></i><span>User Group</span></a></li>
+		<li rel="user"><a href="<%= app.router._generate('userList') %>"><i class="icon-user"></i><span>User</span></a></li>
+		<li rel="agenda"><a href="<%= app.router._generate('agendaList') %>"><i class="icon-book-open"></i><span>The Agenda</span></a></li>
+		<li rel="content"><a href="<%= app.router._generate('contentList') %>"><i class="icon-book-open"></i><span>Content</span></a></li>
+		<li rel="customer-profile"><a href="<%= app.router._generate('customerProfileList') %>"><i class="icon-book-open"></i><span>Customer Profile</span></a></li>
+		<li rel="push-status"><a href="<%= app.router._generate('pushStatusList') %>"><i class="icon-envelope-letter"></i><span> Notification</span></a></li>
+	</ul>
+<% } %>

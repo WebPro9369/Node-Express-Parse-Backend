@@ -1,0 +1,129 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-topfull">
+		<div class="modal-content">
+			<div class="modal-header bg-dark">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+				<h4 class="modal-title"><strong>System Event</strong></h4>
+			</div>
+			<div class="modal-body">
+				
+				<ul class="nav nav-tabs nav-primary">
+					<li><a href="#content-form-general" data-toggle="tab"><i class="icon-info"></i> General</a></li>
+				</ul>
+				
+				<div class="tab-content">
+					
+					<div class="tab-pane fade" id="content-form-general">
+						
+						<div class="row column-seperation">
+							
+							<div class="col-md-6 line-separator">
+				
+								<h3>General</h3>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="type" class="control-label">Type</label>
+											<input id="type" name="type" type="text" class="form-control select2-control" data-placeholder="Choose Type">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="description" class="control-label">Description</label>
+											<textarea id="description" name="description" class="form-control" rows="5"></textarea>
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+											
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="published" name="published" type="checkbox">
+											<label for="published">Active</label>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+							
+							<div class="col-md-6">
+								
+								<h3>Parameters</h3>
+								
+								<div class="row" data-system-event-type="1">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="userBalance1" class="control-label">Add amount to user balance, <small>USD</small></label>
+											<input id="userBalance1" name="userBalance1" type="text" class="form-control"/>
+										</div>
+									</div>
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="userGroupAdd1" class="control-label">Add user to groups</label>
+											<input id="userGroupAdd1" name="userGroupAdd1" type="text" class="form-control select2-control" data-placeholder="Choose Group(s)"/>
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row" data-system-event-type="2">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="userBalance2" class="control-label">Add amount to user balance, <small>USD</small></label>
+											<input id="userBalance2" name="userBalance2" rel="userBalance" type="text" class="form-control"/>
+										</div>
+									</div>
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="userReferrerBalance2" class="control-label">Add amount to referrer balance, <small>USD</small></label>
+											<input id="userReferrerBalance2" name="userReferrerBalance2" rel="userReferrerBalance" type="text" class="form-control"/>
+										</div>
+									</div>
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="userGroupAdd2" class="control-label">Add user to groups</label>
+											<input id="userGroupAdd2" name="userGroupAdd2" rel="userGroupAdd" type="text" class="form-control select2-control" data-placeholder="Choose Group(s)"/>
+										</div>
+									</div>
+									
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="userGroupRemove2" class="control-label">Remove user from groups</label>
+											<input id="userGroupRemove2" name="userGroupRemove2" rel="userGroupRemove" type="text" class="form-control select2-control" data-placeholder="Choose Group(s)"/>
+										</div>
+									</div>
+								
+								</div>
+								
+							</div>
+								
+						</div>
+								
+					</div>
+					
+				
+				</div>
+					
+			</div>
+			<div class="modal-footer bg-dark">
+				<button type="submit" class="btn btn-primary btn-embossed">Save changes</button>
+				<button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>

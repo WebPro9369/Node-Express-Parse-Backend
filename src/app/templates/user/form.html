@@ -1,0 +1,65 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-topfull">
+		<div class="modal-content">
+			<div class="modal-header bg-dark">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+				<h4 class="modal-title"><strong>User</strong></h4>
+			</div>
+			<div class="modal-body">
+				
+				<ul class="nav nav-tabs nav-primary">
+					<li><a href="#user-form-general" data-toggle="tab"><i class="icon-info"></i> General</a></li>
+					<li><a href="#user-form-group" data-toggle="tab"><i class="icon-users"></i> Group</a></li>
+				</ul>
+				
+				<div class="tab-content">
+					
+					<div class="tab-pane fade" id="user-form-general">
+						
+						<div class="row">
+					
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="balance" class="control-label">Current Balance, <small>USD</small></label>
+									<p id="balance" name="balance" type="text" class="form-control">&nbsp;</p>
+								</div>
+							</div>
+						
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="transaction-value" class="control-label">Add value to balance, <small>USD</small></label>
+									<input id="transaction-value" name="transaction-value" type="text" class="form-control">
+								</div>
+							</div>
+						
+						</div>
+								
+					</div>
+					
+					
+					<div class="tab-pane fade" id="user-form-group">
+						
+						<div class="row">
+					
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="group" class="control-label">Related groups</label>
+									<input id="group" name="group" type="text" class="form-control select2-control" data-placeholder="Choose Group">
+								</div>
+							</div>
+						
+						</div>
+								
+					</div>
+					
+				
+				</div>
+					
+			</div>
+			<div class="modal-footer bg-dark">
+				<button type="submit" class="btn btn-primary btn-embossed">Save changes</button>
+				<button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>

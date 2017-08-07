@@ -1,0 +1,19 @@
+<td><%= _node || '&mdash;' %></td>
+<td><%= key || '&mdash;' %></td>
+<td><%= index || '&mdash;' %></td>
+<td>
+	<% if (type === 'text') { %>
+		<%= textValue || '&mdash;' %>
+	<% } else if (type === 'image') { %>
+		<% if (fileValue) { %>
+			<a href="<%= fileValue.url %>" data-action="image-view" data-id="<%= id %>"><i class="icon-eye"></i>View image</a>
+		<% } else { %>
+			Not specified
+		<% } %>
+	<% } else { %>
+		&mdash;
+	<% } %>
+</td>
+<td class="table-action">
+	<a href="#" class="edit btn btn-sm btn-default" data-action="content-update" data-id="<%= id %>" title="Update"><i class="icon-note"></i></a>
+</td>

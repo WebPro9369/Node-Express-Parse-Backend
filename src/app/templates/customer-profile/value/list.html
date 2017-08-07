@@ -1,0 +1,98 @@
+<div>
+	
+	<h3>Option values for first list</h3>
+	
+	<div class="row">
+	
+		<div class="col-md-12">
+			<div class="form-group">
+				<label for="placeholder" class="control-label">Placeholder</label>
+				<input id="placeholder" name="placeholder" rel="0" type="text" class="form-control">
+			</div>
+		</div>
+	
+	</div>
+	
+	<div class="row">
+	
+		<div class="col-md-12">
+			
+			<table class="table">
+				<thead>
+					<tr>
+						<% if (this.type === 'form') { %>
+							<th class="col-md-1">&nbsp;</th>
+							<th class="col-md-4">Value</th>
+							<th class="col-md-6">Description</th>
+							<th class="col-md-1">&nbsp;</th>
+						<% } else { %>
+							<th class="col-md-5">Value</th>
+							<th class="col-md-7">Description</th>
+						<% } %>
+					</tr>
+				</thead>
+				<tbody role="items" rel="0"></tbody>
+			</table>
+			<% if (this.type === 'form') { %>
+				<div class="m-t-20">
+					<div class="btn-group">
+						<button type="button" class="btn btn-sm btn-dark" data-action="customer-profile-value-create" data-index="0"><i class="fa fa-plus"></i> Add New Value</button>
+					</div>
+				</div>
+			<% } %>
+		
+		</div>
+			
+	</div>
+
+</div>
+
+
+<div data-values-type="DoublePicker">
+	
+	<h3>Option values for second list</h3>
+	
+	<div class="row">
+	
+		<div class="col-md-12">
+			<div class="form-group">
+				<label for="placeholder" class="control-label">Placeholder</label>
+				<input id="placeholder" name="placeholder" rel="1" type="text" class="form-control">
+			</div>
+		</div>
+	
+	</div>
+	
+	<div class="row">
+	
+		<div class="col-md-12">
+			
+			<table class="table">
+				<thead>
+					<tr>
+						<% if (this.type === 'form') { %>
+							<th class="col-md-1">&nbsp;</th>
+							<th class="col-md-4">Value</th>
+							<th class="col-md-6">Description</th>
+							<th class="col-md-1">&nbsp;</th>
+						<% } else { %>
+							<th class="col-md-5">Value</th>
+							<th class="col-md-7">Description</th>
+						<% } %>
+					</tr>
+				</thead>
+				<tbody role="items" rel="1"></tbody>
+			</table>
+			<% if (this.type === 'form') { %>
+				<div class="m-t-20">
+					<div class="btn-group">
+						<button type="button" class="btn btn-sm btn-dark" data-action="customer-profile-value-create" data-index="1"><i class="fa fa-plus"></i> Add New Value</button>
+					</div>
+				</div>
+			<% } %>
+		
+		</div>
+			
+	</div>
+	
+</div>

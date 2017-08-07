@@ -1,0 +1,31 @@
+<td><%= createdAt ? moment(createdAt).format(DATETIME_FORMAT) : '&mdash;' %></td>
+<td><%= orderNumber || '&mdash;' %></td>
+<td>
+	<% if (stylist) { %>
+		<a href="#" data-action="stylist-view" data-id="<%= id %>">
+			<i class="icon-eye"></i>
+			<%= stylist.fullName || '&mdash;' %>
+		</a>
+	<% } else { %>
+		&mdash;
+	<% } %>
+</td>
+<td><%= moment.utc(orderDate).format(DATE_FORMAT) || '' %>&nbsp;/&nbsp;<%= _orderTime.join(', ') || '&mdash;' %></td>
+<td><%= totalPrice ? numeral(totalPrice).format(MONEY_FORMAT) : '&mdash;' %></td>
+<td><%= _state.join(', ') || '&mdash;' %></td>
+<td class="table-action">
+	<% if ((actions = this.model.actions()) && !_.isEmpty(actions)) { %>
+		<div class="dropdown edit">
+			<button data-toggle="dropdown" class="edit btn btn-sm btn-primary dropdown-toggle" type="button" aria-expanded="false"><i class="icon-wrench"></i></button>
+			<ul role="menu" class="dropdown-menu dropdown-menu-right">
+				<% _.each(actions, function (state) { %>
+					<li><a href="#" data-action="stylist-order-state" data-value="<%= state.id %>">Mark order as &laquo;<%= state.text %>&raquo;</a></li>
+				<% }); %>
+			</ul>
+		</div>
+	<% } %>
+	<% if (this.model.isState(STYLIST_ORDER_STATE_CHARGED) && !this.model.isState(STYLIST_ORDER_STATE_REFUNDED)) { %>
+		<a href="#" class="edit btn btn-sm btn-danger" data-action="stylist-order-refund" data-id="<%= id %>" title="Refund order"><i class="icon-action-undo"></i></a>
+	<% } %>
+	<a href="#" class="edit btn btn-sm btn-default" data-action="stylist-order-view" data-id="<%= id %>" title="View order"><i class="icon-eye"></i></a>
+</td>

@@ -1,0 +1,50 @@
+<% if (this.options.theme === 'table') { %>
+	<td class="ui-sortable-handle">
+		<i class="icon-cursor-move"></i>
+		<% if (brand) { %>
+			<a href="#" data-action="brand-view" data-id="<%= id %>">
+				<i class="icon-eye"></i>
+				<%= brand.name || '&mdash;' %>
+			</a>
+		<% } else { %>
+			&mdash;
+		<% } %>
+	</td>
+	<td><%= name || '&mdash;' %></td>
+	<td><%= price ? numeral(price).format(MONEY_FORMAT) : '&mdash;' %></td>
+	<td><%= _sizes.join(', ') || '&mdash;' %></td>
+	<td><%= quantity ? numeral(quantity).format(NUMBER_FORMAT) : '&mdash;' %></td>
+	<td>
+		<% if (published) { %>
+			<span class="text-success">Yes</span>
+		<% } else { %>
+			<span class="text-danger">No</span>
+		<% } %>
+	</td>
+	<td class="table-action">
+		<a href="<%= app.router._generate('productOrderList', null, {product: id}) %>" class="edit btn btn-sm btn-blue" title="View order list"><i class="icon-share-alt"></i></a>
+		<a href="#" class="edit btn btn-sm btn-default" data-action="product-update" data-id="<%= id %>"><i class="icon-note"></i></a>
+	</td>
+<% } else if (this.options.theme === 'gallery') { %>
+	<div class="thumbnail">
+		<img src="<%= (preview && preview.thumb ? preview.thumb.url : '') || './assets/images/no-image.png' %>">
+		<div class="caption">
+			<h3 title="<%= name || '&mdash;' %>"><%= name || '&mdash;' %></h3>
+			<p title="<%= _sizes.join(', ') || '&mdash;' %>"><%= _sizes.join(', ') || '&mdash;' %></p>
+			<p title="Price, quantity, published">
+				<%= price ? numeral(price).format(MONEY_FORMAT) : '&mdash;' %> /
+				<nobr><%= quantity ? numeral(quantity).format(NUMBER_FORMAT) : '0' %> items</nobr> /
+				<% if (published) { %>
+					<span class="text-success">published</span>
+				<% } else { %>
+					<span class="text-danger">not published</span>
+				<% } %>
+			</p>
+			<p>
+				<span class="ui-sortable-handle edit btn btn-sm btn-transparent pull-left"><i class="icon-cursor-move"></i></span>
+				<a href="#" class="edit btn btn-sm btn-default pull-right" data-action="product-update" data-id="<%= id %>"><i class="icon-note"></i></a>
+				<a href="<%= app.router._generate('productOrderList', null, {product: id}) %>" class="edit btn btn-sm btn-blue pull-right" title="View order list"><i class="icon-share-alt"></i></a>
+			</p>
+		</div>
+	</div>
+<% } %>

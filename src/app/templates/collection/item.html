@@ -1,0 +1,20 @@
+<td class="ui-sortable-handle"><i class="icon-cursor-move"></i><%= name || '&mdash;' %></td>
+<td><%= seasonDescription || '&mdash;' %></td>
+<td>
+	<% if (private) { %>
+		<span class="text-success">Yes</span>
+	<% } else { %>
+		<span class="text-danger">No</span>
+	<% } %>
+</td>
+<td>
+	<% if (published) { %>
+		<span class="text-success">Yes</span>
+	<% } else { %>
+		<span class="text-danger">No</span>
+	<% } %>
+</td>
+<td class="table-action">
+	<a href="<%= app.router._generate('productList', null, {collection: id}) %>" class="edit btn btn-sm btn-blue" title="View product list"><i class="icon-share-alt"></i></a>
+	<a href="#" class="edit btn btn-sm btn-default" data-action="collection-update" data-id="<%= id %>"><i class="icon-note"></i></a>
+</td>

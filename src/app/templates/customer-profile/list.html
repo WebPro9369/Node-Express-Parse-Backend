@@ -1,0 +1,36 @@
+<div class="panel">
+	<div class="panel-content table-responsive">
+		<div class="m-b-20">
+			<button class="btn btn-sm btn-dark" data-action="customer-profile-create"><i class="fa fa-plus"></i> Add New Option</button>
+			<button class="btn btn-sm btn-light" data-action="customer-profile-create" data-group="true"><i class="fa fa-plus"></i> Add New Category</button>
+			<button class="btn btn-sm btn-default" data-action="customer-profile-order" style="display: none;">Update Customer Profile Option Order</button>
+		</div>
+		<p class="alert bg-info"><i class="icon-bulb"></i> Drag items to change their sort order.</p>
+		<div class="form-inline">
+			<div class="row" role="navigation">
+				<div class="col-xs-9" role="filter">
+					<div class="form-group">
+						<input name="parent" type="hidden" data-placeholder="Choose Parent" style="min-width: 300px; width: 300px;">
+					</div>
+				</div>
+				<div class="col-xs-3">
+				</div>
+			</div>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th class="col-md-1">Key</th>
+						<th class="col-md-2">Title</th>
+						<th class="col-md-8">Description / Values</th>
+						<th class="col-md-1">&nbsp;</th>
+					</tr>
+				</thead>
+				<tbody role="items">
+				</tbody>
+			</table>
+			<div class="row" role="pagination"></div>
+		</div>
+	</div>
+</div>
+
+<form role="form" rel="customerProfile"></form>

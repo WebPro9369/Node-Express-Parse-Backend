@@ -1,0 +1,5 @@
+<% _.each(items, function (value, index) { %>
+	<th<% if (index > 2) { %> class="col-md-1_2"<% } else { %> class="<%= ['col-md-1', 'col-md-2', 'col-md-2'][index] %>"<% } %>>
+		<%= value %>
+	</th>
+<% }); %>

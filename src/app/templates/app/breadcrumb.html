@@ -1,0 +1,6 @@
+<li>
+	<% if (href || route) { %><a href="<%= route ? app.router._generate(route, params) : href %>" title="<%= title ? title : text %>"><% } %>
+		<% if (index == 0) { %><i class="entypo-home"></i><% } %>
+		<%= text %>
+	<% if (href || route) { %></a><% } %>
+</li>

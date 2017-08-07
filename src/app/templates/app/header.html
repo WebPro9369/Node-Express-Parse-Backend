@@ -1,0 +1,31 @@
+<div class="header-left">
+	<div class="topnav">
+		<a class="menutoggle" href="#" data-toggle="sidebar-collapsed"><span class="menu__handle"><span>Menu</span></span></a>
+	</div>
+</div>
+<div class="header-right">
+	<ul class="header-menu nav navbar-nav">
+		<% if (Parse.User.current()) { %>
+			<li id="user-header" class="dropdown">
+				<a data-close-others="true" data-hover="dropdown" data-toggle="dropdown" href="#"><span class="username">Hi, <%= (currentUser = Parse.User.current()) ? _.first(_.compact([currentUser.get('fullName'), currentUser.get('username')])) : '' %></span></a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="<%= app.router._generate('logoutForm') %>"><i class="icon-logout"></i><span>Logout</span></a>
+					</li>
+				</ul>
+			</li>
+		<% } else { %>
+			<li id="user-header" class="dropdown">
+				<a data-close-others="true" data-hover="dropdown" data-toggle="dropdown" href="#"><span class="username">User</span> </a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="<%= app.router._generate('loginForm') %>"><i class="icon-login"></i><span>Login</span></a>
+					</li>
+					<li>
+						<a href="<%= app.router._generate('signupForm') %>"><i class="icon-user-follow"></i><span>Signup</span></a>
+					</li>
+				</ul>
+			</li>
+		<% } %>
+	</ul>
+</div>

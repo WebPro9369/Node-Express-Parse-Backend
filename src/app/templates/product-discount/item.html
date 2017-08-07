@@ -1,0 +1,12 @@
+<td><%= title || '&mdash;' %></td>
+<td><%= priority || '&mdash;' %></td>
+<td>
+	<% if (published) { %>
+		<span class="text-success">Yes</span>
+	<% } else { %>
+		<span class="text-danger">No</span>
+	<% } %>
+</td>
+<td class="table-action">
+	<a href="#" class="edit btn btn-sm btn-default" data-action="product-discount-update" data-id="<%= id %>" title="Update"><i class="icon-note"></i></a>
+</td>

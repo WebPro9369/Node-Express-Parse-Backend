@@ -1,0 +1,343 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-topfull">
+		<div class="modal-content">
+			<div class="modal-header bg-dark">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+				<h4 class="modal-title"><strong>Product</strong></h4>
+			</div>
+			<div class="modal-body">
+				
+				<ul class="nav nav-tabs nav-primary">
+					<li><a href="#product-form-general" data-toggle="tab"><i class="icon-info"></i> General</a></li>
+					<li><a href="#product-form-pdp" data-toggle="tab"><i class="icon-info"></i> PDP</a></li>
+					<li><a href="#product-form-price-and-size" data-toggle="tab"><i class="icon-basket-loaded"></i> Price &amp; Size</a></li>
+					<li><a href="#product-form-images" data-toggle="tab"><i class="icon-picture"></i> Images</a></li>
+					<li><a href="#product-form-availability" data-toggle="tab"><i class="icon-calendar"></i> Availability</a></li>
+				</ul>
+				
+				<div class="tab-content">
+					
+					<div class="tab-pane fade" id="product-form-general">
+				
+						<div class="row column-seperation">
+							
+							<div class="col-md-6 line-separator">
+								
+								<h3>General</h3>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="brand" class="control-label">Brand</label>
+											<input id="brand" name="brand" type="text" class="form-control select2-control" data-placeholder="Choose Brand">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="category" class="control-label">Category</label>
+											<input id="category" name="category" type="text" class="form-control select2-control" data-placeholder="Choose Category">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="name" class="control-label">Product name</label>
+											<input id="name" name="name" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="details" class="control-label">Details</label>
+											<textarea id="details" name="details" class="form-control" rows="5"></textarea>
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="styleCode" class="control-label">Style code</label>
+											<input id="styleCode" name="styleCode" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="styleNote" class="control-label">Style note</label>
+											<textarea id="styleNote" name="styleNote" class="form-control" rows="5"></textarea>
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="color" class="control-label">Color</label>
+											<input id="color" name="color" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="pronoun" class="control-label">Pronoun</label>
+											<input id="pronoun" name="pronoun" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="shareLink" class="control-label">Share link</label>
+											<input id="shareLink" name="shareLink" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+											
+									<div class="col-md-12">
+										<p class="alert bg-info"><i class="icon-bulb"></i> Item will be hidden from the lists in webadmin UI, but will be directly accessible</p>
+										<div class="form-group">
+											<input id="hidden" name="hidden" type="checkbox">
+											<label for="hidden">Hidden from webadmin UI</label>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="row">
+											
+									<div class="col-md-12">
+										
+										<div class="form-group">
+											<input id="published" name="published" type="checkbox">
+											<label for="published">Published</label>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+							
+							<div class="col-md-6">
+								
+								<h3>Preview</h3>
+								
+								<div class="row">
+								
+									<div class="col-md-12">
+										<div class="form-group">
+											<div name="preview"></div>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+								
+						</div>
+					
+					</div>
+					
+					
+					<div class="tab-pane fade" id="product-form-pdp">
+						
+						<div class="row">
+					
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="pdpDetails" class="control-label">Details</label>
+									<textarea id="pdpDetails" name="pdpDetails" class="form-control" rows="5"></textarea>
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+					
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="pdpFit" class="control-label">Fit</label>
+									<textarea id="pdpFit" name="pdpFit" class="form-control" rows="5"></textarea>
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+					
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="pdpSize" class="control-label">Size</label>
+									<textarea id="pdpSize" name="pdpSize" class="form-control" rows="5"></textarea>
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+					
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="pdpCompleteLook" class="control-label">Complete look</label>
+									<textarea id="pdpCompleteLook" name="pdpCompleteLook" class="form-control" rows="5"></textarea>
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+					
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="pdpLookType" class="control-label">Complete Look Type</label>
+									<input id="pdpLookType" name="pdpLookType" type="text" class="form-control select2-control" data-placeholder="Choose Complete Look Type">
+								</div>
+							</div>
+						
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="stylist" class="control-label">Stylist</label>
+									<input id="stylist" name="stylist" type="text" class="form-control select2-control" data-placeholder="Choose Stylist">
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="pdpLookPartner" class="control-label">Partner</label>
+									<input id="pdpLookPartner" name="pdpLookPartner" type="text" class="form-control">
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+					
+					<div class="tab-pane fade" id="product-form-price-and-size">
+						
+						<div class="row column-seperation">
+							
+							<div class="col-md-6 line-separator">
+								
+								<h3>Price</h3>
+								
+								<div class="row">
+							
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="price" class="control-label">Price</label>
+											<input id="price" name="price" type="text" class="form-control">
+										</div>
+									</div>
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="retailPrice" class="control-label">Retail price</label>
+											<input id="retailPrice" name="retailPrice" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="deliveryPrice" class="control-label">Delivery price</label>
+											<input id="deliveryPrice" name="deliveryPrice" type="text" class="form-control">
+										</div>
+									</div>
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="insurancePrice" class="control-label">Insurance price</label>
+											<input id="insurancePrice" name="insurancePrice" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<h3>Rent delay</h3>
+								
+								<div class="row">
+							
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="delayBefore" class="control-label">Before rent <small>(in days)</small></label>
+											<input id="delayBefore" name="delayBefore" type="text" class="form-control">
+										</div>
+									</div>
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="delayAfter" class="control-label">After rent <small>(in days)</small></label>
+											<input id="delayAfter" name="delayAfter" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+							
+							</div>
+							
+							<div class="col-md-6" name="sizes">
+							</div>
+						
+						</div>
+						
+					</div>
+					
+					
+					<div class="tab-pane fade" id="product-form-images" name="photos">
+					</div>
+					
+					
+					<div class="tab-pane fade" id="product-form-availability" name="order">
+					</div>
+					
+				
+				</div>
+					
+			</div>
+			<div class="modal-footer bg-dark">
+				<button type="submit" class="btn btn-primary btn-embossed">Save changes</button>
+				<button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>
