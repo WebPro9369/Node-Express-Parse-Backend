@@ -1,0 +1,14 @@
+<div class="gallery" role="items">
+	<% if (image instanceof Parse.File) {%>
+		<figure>
+			<img src="<%= image.url() || '' %>"/>
+			<figcaption>
+				<button class="btn btn-danger" type="button" data-action="remove"><i class="icons-office-52"></i> Remove</button>
+			</figcaption>
+		</figure>
+	<% } else { %>
+		<figure role="dropzone">
+			<div class="dropzone dropzone-images"></div>
+		</figure>
+	<% } %>
+</div>

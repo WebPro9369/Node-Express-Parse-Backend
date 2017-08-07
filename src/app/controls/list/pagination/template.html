@@ -1,0 +1,32 @@
+<div class="col-md-6">
+	<div class="dataTables_info">
+		<% if (count > 0) { %>
+			<% if (disabled === true) { %>
+				Showing all <%= count %> entries
+			<% } else { %>
+				Showing <%= value * size + 1 %> to <%= count < (value + 1) * size ? count : (value + 1) * size %> of <%= count %> entries
+			<% } %>
+		<% } else { %>
+			No entries found
+		<% } %>
+	</div>
+</div>
+<div class="col-md-6">
+	<div class="dataTables_paginate paging_simple_numbers">
+		<% if (disabled !== true && first < last) { %> 
+			<ul class="pagination">
+				<li class="prev"><a href="#" data-page="<%= first %>"><i class="fa fa-angle-double-left"></i></a></li>
+				<li><a href="#" data-page="<%= value > first ? (value - 1) : first %>"><i class="fa fa-angle-left"></i></a></li>
+				<% if (_.max([first, value - 5]) < value) { %> 
+					<%= _.reduce(_.range(_.max([first, value - 5]), value), function(res, idx) {return res + '<li><a href="#" data-page="' + idx + '">' + (idx + 1) + '</a></li>';}, '') %>
+				<% } %>
+				<li class="active"><a href="#" data-page="<%= value %>"><%= (value + 1) %></a></li>
+				<% if (value + 1 < _.min([value + 6, last + 1])) { %>
+					<%= _.reduce(_.range(value + 1, _.min([value + 6, last + 1])), function(res, value) {return res + '<li><a href="#" data-page="' + value + '">' + (value + 1) + '</a></li>'}, '') %>
+				<% } %>
+				<li><a href="#" data-page="<%= value < last ? (value + 1) : last %>"><i class="fa fa-angle-right"></i></a></li>
+				<li class="next"><a href="#" data-page="<%= last %>"><i class="fa fa-angle-double-right"></i></a></li>
+			</ul>
+		<% } %>
+	</div>
+</div>

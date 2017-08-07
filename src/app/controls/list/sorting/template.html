@@ -1,0 +1,5 @@
+<tr>
+	<% _.each(fields, function (item) { %>
+		<th <% if (item.attribute) { %> data-sort="<%= item.attribute %>"<% } %> class="<% if (value && value.attribute === item.attribute && value.direction > 0) { %>sorting_asc<% } else if (value && value.attribute === item.attribute && value.direction < 0) { %>sorting_desc<% } else if (item.attribute) { %>sorting<% } %> <%= item.css || '' %>"><%= item.title %></th>
+	<% }, value); %>
+</tr>
