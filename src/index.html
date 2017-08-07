@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<meta name="description" content="Armarium Web Admin">
+		<meta name="author" content="themes-lab">
+		<link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+		<title>Armarium Web Admin</title>
+
+		<link rel="stylesheet" href="./assets/css/main.css">
+
+		<script type="text/javascript" src="./libs/require/require.js"></script>
+		<script>
+			require.config({
+				paths : {
+					'main'		: 'main'
+				},
+				urlArgs : 'r=1.0'
+			});
+			require(['main']);
+		</script>
+
+	</head>
+	
+	<body class="fixed-topbar fixed-sidebar theme-sdtl color-default">
+	</body>
+	
+</html>
