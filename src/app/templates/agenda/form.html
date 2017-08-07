@@ -1,0 +1,413 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-topfull">
+		<div class="modal-content">
+			<div class="modal-header bg-dark">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icons-office-52"></i></button>
+				<h4 class="modal-title"><strong>Agenda</strong></h4>
+			</div>
+			<div class="modal-body">
+				
+				<ul class="nav nav-tabs nav-primary">
+					<li><a href="#agenda-form-thumbnail" data-toggle="tab"><i class="icon-list"></i> Thumbnail</a></li>
+					<li><a href="#agenda-form-list" data-toggle="tab"><i class="icon-list"></i> List</a></li>
+					<li><a href="#agenda-form-cover" data-toggle="tab"><i class="icon-list"></i> Cover</a></li>
+					<li><a href="#agenda-form-header" data-toggle="tab"><i class="icon-info"></i> Header</a></li>
+					<li><a href="#agenda-form-content" data-toggle="tab"><i class="icon-info"></i> Content</a></li>
+					<li data-agenda-theme="1 2"><a href="#agenda-form-footer" data-toggle="tab"><i class="icon-info"></i> Footer</a></li>
+				</ul>
+				
+				<div class="tab-content">
+					
+					<div class="tab-pane fade" id="agenda-form-thumbnail">
+						
+						<div class="row column-seperation">
+							
+							<div class="col-md-6 line-separator">
+								
+								<h3>Description</h3>
+				
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="thumbTitle" class="control-label">Title</label>
+											<input id="thumbTitle" name="thumbTitle" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="thumbSubtitle" class="control-label">Subtitle</label>
+											<input id="thumbSubtitle" name="thumbSubtitle" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+									
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="carouselOrder" class="control-label">Carousel sort order <small class="text-muted">(values have ascending order)</small></label>
+											<input id="carouselOrder" name="carouselOrder" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="carouselUrl" class="control-label">Сarousel URL</label>
+											<input id="carouselUrl" name="carouselUrl" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+											
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="inSlider" name="inSlider" type="checkbox">
+											<label for="inSlider">In slider <small class="text-muted">(will be shown in slider at home page)</small></label>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="row">
+											
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="primary" name="primary" type="checkbox">
+											<label for="primary">Primary <small class="text-muted">(will be shown in header at #WorldArmarium page)</small></label>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="row">
+											
+									<div class="col-md-12">
+										<p class="alert bg-info"><i class="icon-bulb"></i> Item will be hidden from the lists in webadmin UI, but will be directly accessible</p>
+										<div class="form-group">
+											<input id="hidden" name="hidden" type="checkbox">
+											<label for="hidden">Hidden from webadmin UI</label>
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="row">
+											
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="published" name="published" type="checkbox">
+											<label for="published">Published</label>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+							
+							<div class="col-md-6">
+								
+								<h3>Image</h3>
+								
+								<div class="row">
+								
+									<div class="col-md-12">
+										<div class="form-group">
+											<div name="thumbImage"> </div>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+								
+						</div>
+						
+					</div>
+					
+					
+					<div class="tab-pane fade" id="agenda-form-list">
+						
+						<div class="row column-seperation">
+							
+							<div class="col-md-6 line-separator">
+								
+								<h3>Description</h3>
+				
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="listTitle" class="control-label">Title</label>
+											<input id="listTitle" name="listTitle" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="listSubtitle" class="control-label">Subtitle</label>
+											<input id="listSubtitle" name="listSubtitle" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+							</div>
+							
+							<div class="col-md-6">
+								
+								<h3>Image</h3>
+								
+								<div class="row">
+								
+									<div class="col-md-12">
+										<div class="form-group">
+											<div name="listImage"> </div>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+								
+						</div>
+					
+					</div>
+					
+					
+					<div class="tab-pane fade" id="agenda-form-cover">
+						
+						<div class="row column-seperation">
+							
+							<div class="col-md-6 line-separator">
+								
+								<h3>Description</h3>
+				
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="coverTitle" class="control-label">Title</label>
+											<input id="coverTitle" name="coverTitle" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+								<div class="row">
+							
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="coverSubtitle" class="control-label">Subtitle</label>
+											<input id="coverSubtitle" name="coverSubtitle" type="text" class="form-control">
+										</div>
+									</div>
+								
+								</div>
+								
+							</div>
+							
+							<div class="col-md-6">
+								
+								<h3>Image</h3>
+								
+								<div class="row">
+								
+									<div class="col-md-12">
+										<div class="form-group">
+											<div name="coverImage"> </div>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+								
+						</div>
+					
+					</div>
+					
+					
+					<div class="tab-pane fade" id="agenda-form-header">
+						
+						<h3 data-agenda-theme="3">Box</h3>
+						
+						<div class="row" data-agenda-theme="3">
+					
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="boxTitle" class="control-label show">Title <i class="icon-info pull-right" data-toggle="popover" data-theme-name="#boxTitle"></i></label>
+									<input id="boxTitle" name="boxTitle" type="text" class="form-control">
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row" data-agenda-theme="3">
+					
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="boxSubtitle" class="control-label show">Subtitle <i class="icon-info pull-right" data-toggle="popover" data-theme-name="#boxSubtitle"></i></label>
+									<input id="boxSubtitle" name="boxSubtitle" type="text" class="form-control">
+								</div>
+							</div>
+						
+						</div>
+						
+						<h3>Images <i class="icon-info pull-right" data-toggle="popover" data-theme-name="#bannerImage,#bannerImageTitle"></i></h3>
+						
+						<div class="row">
+						
+							<div class="col-md-12">
+								<div class="form-group">
+									<div name="bannerImage"> </div>
+								</div>
+							</div>
+							
+						</div>
+					
+					</div>
+					
+					
+					<div class="tab-pane fade" id="agenda-form-content">
+						
+						<h3>Content</h3>
+						
+						<div class="row">
+					
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="title" class="control-label show">Title <i class="icon-info pull-right" data-toggle="popover" data-theme-name="#title"></i></label>
+									<input id="title" name="title" type="text" class="form-control">
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row" data-agenda-theme="1">
+					
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="subtitle" class="control-label show">Subtitle <i class="icon-info pull-right" data-toggle="popover" data-theme-name="#subtitle"></i></label>
+									<input id="subtitle" name="subtitle" type="text" class="form-control">
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="text" class="control-label show">Text <i class="icon-info pull-right" data-toggle="popover" data-theme-name="#text"></i></label>
+									<textarea cols="80" rows="10" name="text"></textarea>
+								</div>
+							</div>
+								
+						</div>
+						
+						<h3 data-agenda-theme="1 3">Images <i class="icon-info pull-right" data-toggle="popover" data-theme-name="#gridImage0,#gridImage1,#gridImage2,#gridImage3,#gridImage4,#gridImage5"></i></h3>
+						
+						<div class="row" data-agenda-theme="1 3">
+						
+							<div class="col-md-12">
+								<div class="form-group">
+									<div name="gridImage"> </div>
+								</div>
+							</div>
+							
+						</div>
+						
+						<h3 data-agenda-theme="1">Bottom images <i class="icon-info pull-right" data-toggle="popover" data-theme-name="#gridBottomImage0,#gridBottomImage1"></i></h3>
+						
+						<div class="row" data-agenda-theme="1">
+						
+							<div class="col-md-12">
+								<div class="form-group">
+									<div name="gridBottomImage"> </div>
+								</div>
+							</div>
+							
+						</div>
+							
+					</div>
+					
+					
+					<div class="tab-pane fade" id="agenda-form-footer">
+						
+						<h3>Content</h3>
+						
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="browseTitle" class="control-label show">Browse title <i class="icon-info pull-right" data-toggle="popover" data-theme-name="#browseTitle"></i></label>
+									<input id="browseTitle" name="browseTitle" type="text" class="form-control">
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="browseSubtitle" class="control-label show">Browse subtitle <i class="icon-info pull-right" data-toggle="popover" data-theme-name="#browseSubtitle"></i></label>
+									<input id="browseSubtitle" name="browseSubtitle" type="text" class="form-control">
+								</div>
+							</div>
+						
+						</div>
+						
+						<div class="row">
+							
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="browseUrl" class="control-label show">Browse URL <i class="icon-info pull-right" data-toggle="popover" data-theme-name="#browseTitle,#browseSubtitle"></i></label>
+									<input id="browseUrl" name="browseUrl" type="text" class="form-control">
+								</div>
+							</div>
+						
+						</div>
+						
+						<h3>Images <i class="icon-info pull-right" data-toggle="popover" data-theme-name="#browseImage0,#browseImage1,#browseImage2,#browseImage3"></i></h3>
+								
+						<div class="row">
+						
+							<div class="col-md-12">
+								<div class="form-group">
+									<div name="browseImage"></div>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				
+				</div>
+					
+			</div>
+			<div class="modal-footer bg-dark">
+				<button type="submit" class="btn btn-primary btn-embossed">Save changes</button>
+				<button type="button" class="btn btn-default btn-embossed" data-dismiss="modal">Cancel</button>
+			</div>
+		</div>
+	</div>
+</div>

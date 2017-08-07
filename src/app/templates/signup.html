@@ -1,0 +1,43 @@
+<div class="container" id="login-block">
+	<div class="row">
+		<div class="col-sm-6 col-md-6 col-md-offset-3">
+			<div class="account-wall">
+				<i class="user-img icons-faces-users-03"></i>
+				<form class="form-signup" role="form">
+					<div class="append-icon">
+						<input type="text" name="fullName" id="fullName" class="form-control form-white firstname" placeholder="Full Name" required autofocus>
+						<i class="icon-user"></i>
+					</div>
+					<div class="append-icon">
+						<input type="email" name="username" id="username" class="form-control form-white email" placeholder="Email" required>
+						<i class="icon-envelope"></i>
+					</div>
+					<div class="append-icon">
+						<input type="text" name="phoneNumber" id="phoneNumber" class="form-control form-white firstname" placeholder="Phone" required autofocus>
+						<i class="icon-screen-smartphone"></i>
+					</div>
+					<div class="append-icon">
+						<input type="password" name="password" id="password" class="form-control form-white password" placeholder="Password" required>
+						<i class="icon-lock"></i>
+					</div>
+					<div class="append-icon m-b-20">
+						<input type="password" name="repeat" id="repeat" class="form-control form-white password2" placeholder="Repeat Password" required>
+						<i class="icon-lock"></i>
+					</div>
+					<button type="submit" id="submit-form" class="btn btn-lg btn-dark m-t-20" data-style="expand-left">
+						Register
+					</button>
+					<div class="clearfix">
+						<p class="pull-right m-t-20">
+							<a href="<%= app.router._generate('loginForm') %>">Already have an account? Sign In</a>
+						</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<p class="account-copyright">
+		<span>Copyright <span class="copyright">&copy;</span> 2016 </span>
+		<span>Armarium Web Admin</span>. <span>All rights reserved. </span>
+	</p>
+</div>

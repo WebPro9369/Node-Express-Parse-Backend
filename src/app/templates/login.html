@@ -1,0 +1,31 @@
+<div class="container" id="login-block">
+	<div class="row">
+		<div class="col-sm-6 col-md-4 col-md-offset-4">
+			<div class="account-wall">
+				<i class="user-img icons-faces-users-03"></i>
+				<form class="form-signin" role="form">
+					<div class="append-icon">
+						<input type="text" required="" placeholder="Username" class="form-control form-white username" id="username" name="username" aria-required="true">
+						<i class="icon-user"></i>
+					</div>
+					<div class="append-icon m-b-20">
+						<input type="password" required="" placeholder="Password" class="form-control form-white password" name="password" aria-required="true">
+						<i class="icon-lock"></i>
+					</div>
+					<button type="submit" id="submit-form" class="btn btn-lg btn-danger btn-block ladda-button" data-style="expand-left">
+						Sign In
+					</button>
+					<div class="clearfix">
+						<p class="pull-right m-t-20">
+							<a href="<%= app.router._generate('signupForm') %>">New here? Sign up</a>
+						</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<p class="account-copyright">
+		<span>Copyright <span class="copyright">&copy;</span> 2016 </span>
+		<span>Armarium Web Admin</span>. <span>All rights reserved. </span>
+	</p>
+</div>

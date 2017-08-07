@@ -1,0 +1,5 @@
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+	<% if (currentUser = Parse.User.current()) { %>
+		<h1>Welcome, <%= _.first(_.compact([currentUser.get("fullName"), currentUser.get("username")])) %>!</h1>
+	<% } %>
+</div>

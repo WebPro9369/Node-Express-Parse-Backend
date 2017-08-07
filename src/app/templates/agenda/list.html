@@ -1,0 +1,42 @@
+<div class="panel">
+	<div class="panel-content table-responsive">
+		<div class="m-b-20">
+			<div class="btn-group" style="vertical-align: top;">
+				<button class="btn btn-sm btn-dark dropdown-toggle" data-toggle="dropdown" type="button" aria-expanded="false"><i class="fa fa-plus"></i> Add New Agenda</button>
+				<ul role="menu" class="dropdown-menu">
+					<% _.each(themes, function (theme) { %>
+						<li><a href="#" data-action="agenda-create" data-theme="<%= theme.id %>"><%= theme.text %></a></li>
+					<% }); %>
+				</ul>
+			</div>
+			<button class="btn btn-sm btn-default" data-action="agenda-order" style="display: none;">Update Agenda Order</button>
+		</div>
+		<p class="alert bg-info"><i class="icon-bulb"></i> You can change the order of the elements until filter and search is not active.</p>
+		<div class="form-inline">
+			<div class="row" role="navigation">
+				<div class="col-xs-9">
+				</div>
+				<div class="col-xs-3">
+					<div class="dataTables_filter" role="search"></div>
+				</div>
+			</div>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th class="col-md-2">Theme</th>
+						<th class="col-md-6">Title</th>
+						<th class="col-md-1">Published</th>
+						<th class="col-md-1">Primary</th>
+						<th class="col-md-1">In slider</th>
+						<th class="col-md-1">&nbsp;</th>
+					</tr>
+				</thead>
+				<tbody role="items">
+				</tbody>
+			</table>
+			<div class="row" role="pagination"></div>
+		</div>
+	</div>
+</div>
+
+<form role="form" rel="agenda"></form>

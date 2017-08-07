@@ -1,0 +1,60 @@
+  <g
+     id="svg-favorite-look"
+     style="display:inline">
+    <rect
+       width="265"
+       height="420"
+       x="0"
+       y="0"
+       id="rect3804"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;display:inline" />
+    <rect
+       width="255"
+       height="99.999985"
+       x="5"
+       y="5.00001"
+       id="bannerImage"
+       style="fill:#ececec;fill-opacity:1;stroke:none;display:inline" />
+    <rect
+       width="155"
+       height="305"
+       x="5"
+       y="110"
+       id="text"
+       style="fill:#ececec;fill-opacity:1;stroke:none;display:inline" />
+    <rect
+       width="106"
+       height="31"
+       x="17"
+       y="37"
+       id="title"
+       style="fill:#ececec;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;display:inline" />
+    <rect
+       width="110"
+       height="80"
+       x="140"
+       y="15"
+       id="rect2989-7"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;display:inline" />
+    <rect
+       width="90"
+       height="20"
+       x="150"
+       y="25"
+       id="boxTitle"
+       style="fill:#ececec;fill-opacity:1;stroke:none;display:inline" />
+    <rect
+       width="90"
+       height="30"
+       x="150"
+       y="55"
+       id="boxSubtitle"
+       style="fill:#ececec;fill-opacity:1;stroke:none;display:inline" />
+    <rect
+       width="95"
+       height="305"
+       x="165"
+       y="110"
+       id="gridImage0"
+       style="fill:#ececec;fill-opacity:1;stroke:none;display:inline" />
+  </g>

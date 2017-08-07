@@ -1,0 +1,26 @@
+<td class="ui-sortable-handle"><i class="icon-cursor-move"></i><%= _theme || '&mdash;' %></td>
+<td><%= title || '&mdash;' %></td>
+<td>
+	<% if (published) { %>
+		<span class="text-success">Yes</span>
+	<% } else { %>
+		<span class="text-danger">No</span>
+	<% } %>
+</td>
+<td>
+	<% if (primary) { %>
+		<span class="text-success">Yes</span>
+	<% } else { %>
+		<span class="text-danger">No</span>
+	<% } %>
+</td>
+<td>
+	<% if (inSlider) { %>
+		<span class="text-success">Yes</span>
+	<% } else { %>
+		<span class="text-danger">No</span>
+	<% } %>
+</td>
+<td class="table-action">
+	<a href="#" class="edit btn btn-sm btn-default" data-action="agenda-update" data-id="<%= id %>" title="Update"><i class="icon-note"></i></a>
+</td>

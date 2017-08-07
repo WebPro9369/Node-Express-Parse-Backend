@@ -1,0 +1,106 @@
+  <g
+     id="svg-night-moves"
+     style="display:inline">
+    <rect
+       width="265"
+       height="420"
+       x="0"
+       y="0"
+       id="rect3804"
+       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+    <rect
+       width="255"
+       height="99.999985"
+       x="5"
+       y="5.00001"
+       id="bannerImage"
+       style="fill:#ececec;fill-opacity:1;stroke:none" />
+    <rect
+       width="255"
+       height="205"
+       x="5"
+       y="125"
+       id="text"
+       style="fill:#ececec;fill-opacity:1;stroke:none" />
+    <rect
+       width="60"
+       height="80"
+       x="5"
+       y="335"
+       id="browseImage0"
+       style="fill:#ececec;fill-opacity:1;stroke:none;display:inline" />
+    <rect
+       width="60"
+       height="80"
+       x="70"
+       y="335"
+       id="browseImage1"
+       style="fill:#ececec;fill-opacity:1;stroke:none;display:inline" />
+    <rect
+       width="60"
+       height="80"
+       x="135"
+       y="335"
+       id="browseImage2"
+       style="fill:#ececec;fill-opacity:1;stroke:none;display:inline" />
+    <rect
+       width="60"
+       height="80"
+       x="200"
+       y="335"
+       id="browseImage3"
+       style="fill:#ececec;fill-opacity:1;stroke:none;display:inline" />
+    <rect
+       width="165"
+       height="60"
+       x="55"
+       y="345"
+       id="rect3798-8"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;display:inline" />
+    <rect
+       width="145"
+       height="15"
+       x="65"
+       y="355"
+       id="browseTitle"
+       style="fill:#ececec;fill-opacity:1;stroke:none;display:inline" />
+    <rect
+       width="145"
+       height="20"
+       x="65"
+       y="375"
+       id="browseSubtitle"
+       style="fill:#ececec;fill-opacity:1;stroke:none;display:inline" />
+    <rect
+       width="255"
+       height="10"
+       x="5"
+       y="110"
+       id="bannerImageTitle"
+       style="fill:#ececec;fill-opacity:1;stroke:none" />
+    <rect
+       width="161"
+       height="31"
+       x="52"
+       y="37"
+       id="title"
+       style="fill:#ececec;fill-opacity:1;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;display:inline" />
+    <text
+       x="30.273438"
+       y="382.1875"
+       id="text4021"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial Bold"><tspan
+         x="30.273438"
+         y="382.1875"
+         id="tspan4023">1</tspan></text>
+    <text
+       x="224.48242"
+       y="382.1875"
+       id="text3841"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial Bold"><tspan
+         x="224.48242"
+         y="382.1875"
+         id="tspan3843">4</tspan></text>
+  </g>
